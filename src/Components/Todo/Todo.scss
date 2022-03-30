@@ -4,7 +4,6 @@
     }
     &__user{
         display: flex;
-        align-items: center;
         &--lname{
             display: flex;
             flex-direction: column;
@@ -44,6 +43,31 @@
             line-height: 24px;
             color: #000000;
             margin-top: 5px;
+            margin-bottom: 15px;
         }
+    }
+    &__icon--list{
+        width: 586px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 22px;
+    }
+    &__icon--item{
+        display: flex;
+        align-items: center;
+    }
+    &__icon--count{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #536471;
+        margin-left: 10px;
+    }
+    &__line{
+        width: 909px;
+        height: 1px;
+        background: #D8D8D8;
     }
 }
