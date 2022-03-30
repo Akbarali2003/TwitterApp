@@ -1,0 +1,24 @@
+.main{
+    margin-top: 20px;
+    &__title{
+        width: 869px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        &--text{
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: #000000;
+        }
+    }
+    &__one--line{
+        width:909px;
+        height: 1px;
+        background: #D8D8D8;
+        margin-top: 20px;
+    }
+}

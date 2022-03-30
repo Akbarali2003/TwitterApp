@@ -1,0 +1,30 @@
+.header{
+    &__nav{
+        width: 153px;
+        margin-top: 49px;
+        margin-left: 15px;
+        &--item{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__nav--hometext{
+            font-weight: 700;
+        }
+        &--link{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            
+            & span{
+                font-family: 'Roboto';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                color: #000000;
+                margin-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    &__section{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-top: 60px;
+    }
+    &__title{
+        font-family: 'Roboto';
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 49px;
+        margin-top: 36px;
+        margin-bottom: 36px;
+        
+    }
+    &__form{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        &--username{
+            &::placeholder{
+                font-family:'Roboto';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: rgba(0, 0, 0, 0.6);
+                
+            }
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            padding: 23px 194px 23px 20px;
+            margin-bottom: 25px;
+        }
+        &--password{
+            &::placeholder{
+                font-family:'Roboto';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 24px;
+                color: rgba(0, 0, 0, 0.6);
+                
+            }
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            padding: 23px 194px 23px 20px;
+            margin-bottom: 25px;
+        }
+        &--btn{
+            font-family:'Roboto';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #1DA1F2;
+            border-radius: 76px;
+            padding: 18px 199px 18px 198px;
+            border: none;
+        }
+    }
+    &__text{
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        &--one{
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #1DA1F2;
+        }
+        &--two{
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #1DA1F2;
+        }
+    }
+}
