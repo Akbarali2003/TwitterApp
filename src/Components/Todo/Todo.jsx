@@ -1,6 +1,15 @@
 import React from 'react';
+import './Todo.scss';
 import UserLittleImg2 from '../../Assets/Images/userlittleimg2.jpg';
+import UserLittleImg3 from '../../Assets/Images/userlittleimg3.jpg';
+import UserLittleImg4 from '../../Assets/Images/userlittleimg4.jpg';
 import ThreePoint from '../../Assets/Images/three-point.svg';
+
+import CommentImg from '../../Assets/Images/comment.svg';
+import RetweetImg from '../../Assets/Images/retweet.svg';
+import LikeImg from '../../Assets/Images/like.svg';
+import ShareImg from '../../Assets/Images/share.svg';
+import StatisticsImg from '../../Assets/Images/statistics.svg';
 function HomeTodo() {
 	const [todos, setTodos] = React.useState([
 		{ id: 0, title: 'Code yozdim', isCompleted: false },
@@ -8,43 +17,130 @@ function HomeTodo() {
 	]);
 	return (
 		<>
-			<input
-				onKeyUp={(evt) => {
-					const newTodo = {
-						id: todos[todos.length - 1]?.id + 1 || 0,
-						title: evt.target.value,
-						isCompleted: false,
-					};
-					setTodos([newTodo, ...todos]);
-				}}
-				type="text"
-				placeholder="What’s happening"
-			/>
-			<button type="submit">Submit</button>
+			<section className="todo">
+				<input
+					onKeyUp={(evt) => {
+						const newTodo = {
+							id: todos[todos.length - 1]?.id + 1 || 0,
+							title: evt.target.value,
+							isCompleted: false,
+						};
+						setTodos([newTodo, ...todos]);
+					}}
+					type="text"
+					placeholder="What’s happening"
+				/>
+				<button type="submit">Submit</button>
 
-			<ul>
-				{todos.map((row) => (
-					<li key={row.id}>{row.title}</li>
-				))}
-				<li>
-					<span className="main__user">
-						<img src={UserLittleImg2} alt="UserLittleImg2" width='60'height='60' />
-						<span className="main__user--lname">
-							<span>
-								<p className="main__user--name">Designsta</p>
-								<p className="main__user--username">
-									@inner · 25m
+				<ul className="todo__list">
+					{todos.map((row) => (
+						<li key={row.id}>{row.title}</li>
+					))}
+					<li className="todo__item">
+						<div className="todo__user">
+							<img
+								src={UserLittleImg2}
+								alt="UserLittleImg2"
+								width="60"
+								height="60"
+							/>
+							<span className="todo__user--lname">
+								<span className="todo__user--surename">
+									<span className='todo__user--sname'>
+										<p className="todo__user--name">
+											Designsta
+										</p>
+										<p className="todo__user--username">
+											@inner · 25m
+										</p>
+									</span>
+									<img src={ThreePoint} alt="ThreePoint" />
+								</span>
+								<p className='todo__user--commit'>
+									Twitterdagi ayol-erkak
+									qarama-qarshiliginglardan o'zinglar
+									zerikmadinglarmi?
 								</p>
-								<img src={ThreePoint} alt="ThreePoint" />
+								<ul>
+									<li>
+										<img src={CommentImg} alt="CommentImg" />
+										<p>10</p>
+									</li>
+									<li>
+										<img src={RetweetImg} alt="RetweetImg" />
+										<p>1</p>
+									</li>
+									<li>
+										<img src={LikeImg} alt="LikeImg" />
+										<p>8</p>
+									</li>
+									<li>
+										<img src={ShareImg} alt="ShareImg" />
+									</li>
+									<li>
+										<img src={StatisticsImg} alt="StatisticsImg" />
+									</li>
+								</ul>
 							</span>
-							<p>
-								Twitterdagi ayol-erkak qarama-qarshiliginglardan
-								o'zinglar zerikmadinglarmi?
-							</p>
-						</span>
-					</span>
-				</li>
-			</ul>
+						</div>
+					</li>
+					<li className="todo__item">
+						<div className="todo__user">
+							<img
+								src={UserLittleImg3}
+								alt="UserLittleImg3"
+								width="60"
+								height="60"
+							/>
+							<span className="todo__user--lname">
+								<span className="todo__user--surename">
+									<span className='todo__user--sname'>
+										<p className="todo__user--name">
+											cloutexhibition
+										</p>
+										<p className="todo__user--username">
+											@RajLahoti · 22m
+										</p>
+									</span>
+									<img src={ThreePoint} alt="ThreePoint" />
+								</span>
+								<p className='todo__user--commit'>
+									YPIP dasturining bu yilgi sezoni ham o’z
+									nihoyasiga yetmoqda. Mentorlik davomida
+									talaba va yangi bitiruvchilarni
+									o’sayotganini ko’rib hursand bo’ladi odam.
+								</p>
+							</span>
+						</div>
+					</li>
+					<li className="todo__item">
+						<div className="todo__user">
+							<img
+								src={UserLittleImg4}
+								alt="UserLittleImg4"
+								width="60"
+								height="60"
+							/>
+							<span className="todo__user--lname">
+								<span className="todo__user--surename">
+									<span className='todo__user--sname'>
+										<p className="todo__user--name">
+											CreativePhoto
+										</p>
+										<p className="todo__user--username">
+											@cloutexhibition · 1h
+										</p>
+									</span>
+									<img src={ThreePoint} alt="ThreePoint" />
+								</span>
+								<p className='todo__user--commit'>
+									Обетда..... <br /> Кечиринглар
+								</p>
+							</span>
+						</div>
+					</li>
+				</ul>
+			</section>
 		</>
 	);
 }

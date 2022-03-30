@@ -1,0 +1,49 @@
+.todo{
+    &__item{
+        padding: 10px 25px 20px 25px;
+    }
+    &__user{
+        display: flex;
+        align-items: center;
+        &--lname{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-left: 15px;
+        }
+        &--surename{
+            width: 784px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &--sname{
+            display: flex;
+            align-items: center;
+        }
+        &--name{
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            margin-right: 5px;
+        }
+        &--username{
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            opacity: 0.6;
+        }
+        &--commit{
+            width: 747px;
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            margin-top: 5px;
+        }
+    }
+}
