@@ -1,5 +1,5 @@
 import React from 'react';
-import createFragment from 'react-addons-create-fragment'; 
+import createFragment from 'react-addons-create-fragment';
 import './Todo.scss';
 import UserLittleImg2 from '../../Assets/Images/userlittleimg2.jpg';
 import UserLittleImg3 from '../../Assets/Images/userlittleimg3.jpg';
@@ -12,22 +12,32 @@ import LikeImg from '../../Assets/Images/like.svg';
 import ShareImg from '../../Assets/Images/share.svg';
 import StatisticsImg from '../../Assets/Images/statistics.svg';
 import KabobImg from '../../Assets/Images/kabob.jpg';
-
 function HomeTodo() {
 	const [todos, setTodos] = React.useState([
 		{ id: 0, title: 'Code yozdim', isCompleted: false },
 		{ id: 1, title: 'Code yozmadim', isCompleted: true },
 	]);
-	
 	return (
 		<>
 			<section className="todo">
-				
+				<form>
+					<input
+						onKeyUp={(evt) => {
+							const newTodo = {
+								id: todos[todos.length - 1]?.id + 1 || 0,
+								title: evt.target.value,
+								isCompleted: false,
+							};
+							setTodos([newTodo, ...todos]);
+						}}
+						type="text"
+						placeholder="What’s happening"
+					/>
+					<button type="submit">Submit</button>
+				</form>
 				<ul className="todo__list">
 					{todos.map((row) => (
-						<li key={row.id}>
-							{row.title}
-						</li>
+						<li key={row.id}>{row.title}</li>
 					))}
 					<hr className="todo__line" />
 					<li className="todo__item">
