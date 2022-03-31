@@ -1,6 +1,6 @@
 import React from 'react';
-import createFragment from 'react-addons-create-fragment';
 import './Todo.scss';
+import UserLittleImg1 from '../../Assets/Images/userlittleimg1.jpg';
 import UserLittleImg2 from '../../Assets/Images/userlittleimg2.jpg';
 import UserLittleImg3 from '../../Assets/Images/userlittleimg3.jpg';
 import UserLittleImg4 from '../../Assets/Images/userlittleimg4.jpg';
@@ -14,13 +14,21 @@ import StatisticsImg from '../../Assets/Images/statistics.svg';
 import KabobImg from '../../Assets/Images/kabob.jpg';
 function HomeTodo() {
 	const [todos, setTodos] = React.useState([
-		{ id: 0, title: 'Code yozdim', isCompleted: false },
+		{
+			id: 0,
+			img: { UserLittleImg1 },
+			title: 'Code yozdim',
+			isCompleted: false,
+		},
 		{ id: 1, title: 'Code yozmadim', isCompleted: true },
 	]);
+	const LikeRef = React.useRef();
+	const [count, setCount] = React.useState(10);
 	return (
 		<>
 			<section className="todo">
 				<form>
+					<img src={todos.img} alt="UserLittleImg1" />
 					<input
 						onKeyUp={(evt) => {
 							const newTodo = {
@@ -68,10 +76,16 @@ function HomeTodo() {
 								<ul className="todo__icon--list">
 									<li className="todo__icon--item">
 										<img
+											onClick={() => {
+												setCount(count + 1);
+											}}
 											src={CommentImg}
 											alt="CommentImg"
+											ref={LikeRef}
 										/>
-										<p className="todo__icon--count">10</p>
+										<p className="todo__icon--count">
+											{count}
+										</p>
 									</li>
 									<li className="todo__icon--item">
 										<img

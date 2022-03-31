@@ -50,9 +50,9 @@ function Login() {
 							Log In
 						</button>
 					</form>
-					<span className='login__text'>
-						<p className='login__text--one'>Forgot password?</p>
-						<p className='login__text--two'>Sign up to Twitter</p>
+					<span className="login__text">
+						<p className="login__text--one">Forgot password?</p>
+						<p className="login__text--two">Sign up to Twitter</p>
 					</span>
 				</section>
 			</div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.scss';
-import { NavLink } from 'react-router-dom';
 import HomeHeader from './Header/Header';
 import HomeMain from './Main/Main';
 import HomeFooter from './Footer/Footer';
