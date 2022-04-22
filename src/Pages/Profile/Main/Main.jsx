@@ -6,6 +6,7 @@ import LocationIcon from '../../../Assets/Images/location.svg';
 import SkripkaIcon from '../../../Assets/Images/skripka.svg';
 import BornIcon from '../../../Assets/Images/bornicon.svg';
 import DataIcon from '../../../Assets/Images/dataicon.svg';
+import ProfileHero from '../../../Components/ProfileHero/ProfileHero';
 
 function ProfileMain() {
 	return (
@@ -64,6 +65,8 @@ function ProfileMain() {
                     <p className='main__follows--following'><p>67</p> Following</p>
                     <p className='main__follows--follow'><p>47</p> Followers</p>
                 </span>
+				<ProfileHero/>
+				
 			</main>
 		</>
 	);

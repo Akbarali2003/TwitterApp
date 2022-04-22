@@ -1,0 +1,101 @@
+.tweets{
+    
+    &__pin{
+        width: 134px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 15px;
+        margin-left: 25px;
+        margin-bottom: 15px;
+        &--text{
+            font-family:'Roboto';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+            color: #536471;
+            
+        }
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        padding: 0 25px 0 25px;
+        &:last-child{
+            align-items:flex-start !important;
+        }
+        
+    }
+    &__alltext{
+        margin: 0 20px 0 15px;
+    }
+    &__user{
+        display: flex;
+        align-items: center;
+        &--name{
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            color: #000000;
+            margin-right: 5px;
+        }
+        &--username{
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: #000000;
+            opacity: 0.6;
+        }
+    }
+    &__comment{
+        width: 747px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+        margin-top: 5px;
+    }
+    &__line{
+        width: 909px;
+        height: 1px;
+        background: #E6E6E6;
+    }
+    &__icon--list{
+        width: 586px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 22px;
+        margin-bottom: 20px;
+    }
+    &__icon--item{
+        display: flex;
+        align-items: center;
+    }
+    &__icon--count{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #536471;
+        margin-left: 10px;
+    }
+    &__line{
+        width: 909px;
+        height: 1px;
+        background: #D8D8D8;
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+    }
+}

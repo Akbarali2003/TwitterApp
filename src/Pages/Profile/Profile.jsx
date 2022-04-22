@@ -5,7 +5,7 @@ import ProfileMain from './Main/Main';
 import ProfileFooter from './Footer/Footer';
 function Profile() {
 	return (
-		<>
+		<div className='container'>
 			<div className="profile">
 				<ProfileHeader />
 				<hr className="profile__one--line" />
@@ -13,7 +13,7 @@ function Profile() {
 				<hr className="profile__two--line" />
 				<ProfileFooter/>
 			</div>
-		</>
+		</div>
 	);
 }
 

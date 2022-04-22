@@ -1,0 +1,26 @@
+.profilehero{
+    margin: 40px 50px 19px 50px;
+    &__list{
+        width: 809px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #000000;
+        text-decoration: none;
+        &:focus-within{
+            font-weight: 700;
+        }
+    }
+    &__line{
+        width: 909px;
+        height: 1px;
+        background: #C4C4C4;
+        
+    }
+}

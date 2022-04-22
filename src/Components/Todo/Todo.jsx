@@ -1,6 +1,6 @@
 import React from 'react';
 import './Todo.scss';
-import UserLittleImg1 from '../../Assets/Images/userlittleimg1.jpg';
+import UserLittleImg1 from '../../Assets/Images/userlittleimg1.png';
 import UserLittleImg2 from '../../Assets/Images/userlittleimg2.jpg';
 import UserLittleImg3 from '../../Assets/Images/userlittleimg3.jpg';
 import UserLittleImg4 from '../../Assets/Images/userlittleimg4.jpg';

@@ -1,7 +1,12 @@
+.container{
+    width: 1610px;
+    margin: 0 auto;
+}
 .home{
     display: flex;
     &__one--line{
         width: 1px;
+        // height: 1070px;
         background: #D8D8D8;
         margin-left: 15px;
     }

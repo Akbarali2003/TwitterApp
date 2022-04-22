@@ -10,7 +10,7 @@ function AuthenticatedApp() {
 
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/Profile" element={<Profile />} />
+				<Route path="/profile/*" element={<Profile />} />
 			</Routes>
 		</>
 	);
