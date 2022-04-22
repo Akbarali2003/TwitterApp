@@ -7,11 +7,12 @@ function Home() {
 	return (
 		<>
 			<div className="home">
-				<HomeHeader />
+		{/*<HomeHeader />
 				<hr className="home__one--line" />
 				<HomeMain />
 				<hr className="home__one--line" />
-				<HomeFooter />
+				<HomeFooter />*/}
+	<h1>Home</h1>
 			</div>
 		</>
 	);
